@@ -1,26 +1,231 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
+
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+
+  --primary: #00305B;
+  --primary-foreground: #ffffff;
+
+  --secondary: #C5A96F;
+  --secondary-foreground: #ffffff;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #00305B;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+
+  --card: #020617;
+  --card-foreground: #f8fafc;
+
+  --popover: #020617;
+  --popover-foreground: #f8fafc;
+
+  --primary: #5286ba;
+  --primary-foreground: #f8fafc;
+
+  --secondary: #C5A96F;
+  --secondary-foreground: #ffffff;
+
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+
+  --destructive: #7f1d1d;
+  --destructive-foreground: #f8fafc;
+
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #C5A96F;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Atmospheric Background Effect */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(255, 255, 255, 0.8), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(197, 169, 111, 0.15), transparent 25%);
+  filter: blur(100px);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.dark body::before {
+  background:
+    radial-gradient(circle at 15% 50%, rgba(0, 48, 91, 0.4), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(197, 169, 111, 0.15), transparent 25%);
+  opacity: 0.8;
+}
+
+/* 
+   Liquid Glass System 
+   -------------------
+   A tiered system for glassmorphism to establish visual hierarchy.
+*/
+
+/* Tier 1: Surface (Navbars, Sidebars, Modals) - High blur, low opacity */
+.glass-surface {
+  @apply bg-white/40 dark:bg-black/40 backdrop-blur-2xl border border-white/30 dark:border-white/10;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Tier 2: Cards (Content containers) - Medium blur, interactive */
+.glass-card {
+  @apply bg-white/15 dark:bg-black/20 backdrop-blur-xl border border-white/20 dark:border-white/5;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover {
+  @apply border-white/40 dark:border-white/20 bg-white/25 dark:bg-black/30;
+  transform: translateY(-4px);
+  box-shadow:
+    0 25px 30px -5px rgba(0, 0, 0, 0.2),
+    0 15px 15px -5px rgba(0, 0, 0, 0.1),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Tier 3: Emboss (Active states, pressed) */
+.glass-emboss {
+  @apply border-t-white/30 border-l-white/30 border-b-black/10 border-r-black/10;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2), inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Liquid Shine Animation for Glass Cards */
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
+  transform: skewX(-25deg);
+  transition: none;
+  pointer-events: none;
+}
+
+.glass-card:hover::after {
+  animation: shine 1.5s ease-in-out;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes scan {
+  from {
+    top: -10%;
+  }
+
+  to {
+    top: 110%;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
 }

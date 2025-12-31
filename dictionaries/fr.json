@@ -1,0 +1,349 @@
+{
+    "navigation": {
+        "home": "Accueil",
+        "earn": "Gagner des Miles",
+        "redeem": "Utiliser vos Miles",
+        "tiers": "Niveaux de Membre",
+        "signIn": "Se Connecter",
+        "joinNow": "Rejoindre"
+    },
+    "hero": {
+        "title": "Élevez Votre Voyage avec",
+        "subtitle": "Rejoignez un monde d'avantages exclusifs, de voyage fluide et de récompenses plus rapides. Votre fidélité mérite le meilleur.",
+        "joinNow": "Rejoindre Maintenant",
+        "learnMore": "En Savoir Plus"
+    },
+    "footer": {
+        "description": "Le programme de fidélité qui vous récompense pour chaque voyage.",
+        "program": "Programme",
+        "tierLevels": "Niveaux de Membre",
+        "earnMiles": "Gagner des Miles",
+        "redeemMiles": "Utiliser vos Miles",
+        "support": "Support",
+        "contactUs": "Nous Contacter",
+        "faq": "FAQ",
+        "termsConditions": "Termes et Conditions",
+        "followUs": "Suivez-nous",
+        "rightsReserved": "EgyptAir. Tous droits réservés."
+    },
+    "benefits": {
+        "title": "Pourquoi Rejoindre EgyptAir Plus?",
+        "subtitle": "Débloquez une expérience de voyage premium avec chaque mile que vous volez.",
+        "earn": {
+            "title": "Gagnez des Miles Facilement",
+            "description": "Gagnez des miles sur les vols EgyptAir et les partenaires Star Alliance.",
+            "text": "Avec un vaste réseau de partenaires, vos miles s'accumulent plus rapidement, vous rapprochant de votre prochain voyage récompense."
+        },
+        "lounge": {
+            "title": "Accès Exclusif aux Salons",
+            "description": "Détendez-vous confortablement avant votre vol.",
+            "text": "Profitez de l'accès aux salons premium dans le monde entier en montant dans les niveaux, assurant un début relaxant à votre voyage."
+        },
+        "priority": {
+            "title": "Services Prioritaires",
+            "description": "Évitez les files d'attente avec l'enregistrement et l'embarquement prioritaires.",
+            "text": "Gagnez du temps à l'aéroport avec des comptoirs dédiés et un traitement prioritaire pour vos bagages."
+        }
+    },
+    "tiersSection": {
+        "title": "Ascendez vers de Nouveaux Sommets",
+        "description": "Nos cinq niveaux - Blue, Silver, Gold, Elite et Platinum - sont conçus pour récompenser votre fidélité. Plus vous volez, plus vous débloquez d'avantages exclusifs.",
+        "blue": "Blue : Votre entrée dans un monde de récompenses.",
+        "silver": "Silver : 50% de Miles Bonus & Accès au Salon.",
+        "gold": "Gold : Embarquement Prioritaire & Bagages Supplémentaires.",
+        "elite": "Elite : Flexibilité exclusive et avantages de miles de niveau.",
+        "platinum": "Platinum : La reconnaissance et le service ultimes.",
+        "viewAll": "Voir Tous les Niveaux"
+    },
+    "auth": {
+        "signIn": {
+            "title": "Connexion Membre",
+            "description": "Entrez votre numéro de membre pour accéder à votre compte.",
+            "membershipId": "Numéro de Membre",
+            "password": "Mot de Passe / PIN",
+            "forgotPin": "PIN Oublié?",
+            "submit": "Se Connecter",
+            "submitting": "Connexion en cours...",
+            "notMember": "Pas encore membre?",
+            "join": "Rejoindre EgyptAir Plus"
+        },
+        "signUp": {
+            "title": "Rejoindre EgyptAir Plus",
+            "description": "Commencez votre voyage vers des récompenses et des avantages exclusifs aujourd'hui.",
+            "step1": "Informations Personnelles",
+            "step2": "Coordonnées",
+            "step3": "Consentements",
+            "titleLabel": "Titre",
+            "firstName": "Prénom",
+            "middleName": "Deuxième Prénom",
+            "lastName": "Nom de Famille",
+            "gender": "Sexe",
+            "dob": "Date de Naissance",
+            "nationality": "Nationalité",
+            "email": "Email",
+            "mobile": "Numéro de Mobile",
+            "address": "Adresse",
+            "country": "Pays de Résidence",
+            "city": "Ville",
+            "postalCode": "Code Postal",
+            "marketingConsent": "J'accepte de recevoir des communications marketing, des offres et des actualités de EgyptAir Plus.",
+            "termsConsent": "J'accepte les <link>Termes et Conditions</link> du programme EgyptAir Plus.",
+            "privacyConsent": "J'accepte la <link>Politique de Confidentialité</link> concernant le traitement de mes données personnelles.",
+            "submit": "Créer un Compte",
+            "alreadyMember": "Déjà membre?",
+            "loginHere": "Connectez-vous ici"
+        }
+    },
+    "earn": {
+        "title": "Gagner des Miles",
+        "subtitle": "Chaque voyage compte. Découvrez les nombreuses façons de collecter des miles avec EgyptAir Plus.",
+        "fly": {
+            "title": "Voler avec EgyptAir",
+            "description": "Gagnez des miles sur chaque vol EgyptAir en fonction de la distance parcourue et de votre classe de réservation. Les classes de réservation supérieures gagnent un pourcentage plus élevé de miles.",
+            "table": {
+                "cabin": "Classe de Cabine",
+                "booking": "Classes de Réservation",
+                "miles": "Miles Gagnés"
+            },
+            "disclaimer": "* Les taux de gain sont susceptibles de changer. Les miles sont valables 36 mois à compter de la date du vol."
+        },
+        "starAlliance": {
+            "title": "Partenaires Star Alliance",
+            "subtitle": "Synchronisation du Réseau Mondial",
+            "description": "En tant que membre Star Alliance, les opportunités de gain s'étendent sur l'ensemble du réseau. L'accumulation de miles dépend de l'accord du transporteur exploitant avec EgyptAir Plus.",
+            "list": [
+                "Fournissez votre numéro de membre EgyptAir Plus lors de la réservation et de l'enregistrement.",
+                "Assurez-vous que votre nom sur le billet correspond exactement à votre compte de membre.",
+                "Conservez vos cartes d'embarquement et billets électroniques jusqu'à ce que les miles soient crédités."
+            ],
+            "didYouKnow": {
+                "title": "Le Saviez-Vous?",
+                "text": "Vous pouvez atteindre les statuts Silver et Gold plus rapidement en volant sur les partenaires Star Alliance, mais rappelez-vous qu'au moins 4 secteurs doivent être effectués sur des vols EgyptAir pour le renouvellement du statut."
+            },
+            "viewList": "Voir la Liste des Partenaires",
+            "pageTitle": "Réseau Star Alliance",
+            "pageSubtitle": "Gagnez des miles à travers le plus grand réseau de compagnies aériennes au monde.",
+            "intro": "Les membres EgyptAir Plus gagnent des miles lorsqu'ils volent avec n'importe quelle compagnie aérienne membre de Star Alliance. Le kilométrage réel gagné dépend du transporteur exploitant, de la classe de réservation valide et de la distance parcourue. Pour garantir que vos miles sont crédités, indiquez toujours votre numéro de membre EgyptAir Plus lors de la réservation et de l'enregistrement.",
+            "chartsTitle": "Tableaux de Gain Représentatifs",
+            "chartsDisclaimer": "* Les tableaux sont à titre indicatif uniquement et susceptibles de changer.",
+            "memberAirlinesTitle": "Compagnies Aériennes Membres",
+            "backToEarn": "Retour à Gagner",
+            "tableHeaders": {
+                "class": "Classe de Cabine",
+                "earned": "% Gagné"
+            }
+        },
+        "cobranded": {
+            "title": "Cartes Co-brandées",
+            "description": "Gagnez en dépensant.",
+            "text": "Utilisez votre carte de crédit CIB EgyptAir Miles pour vos achats quotidiens.",
+            "cta": "Demander Maintenant"
+        },
+        "hotels": {
+            "title": "Hôtels et Voitures",
+            "description": "Partenaires de voyage.",
+            "text": "Gagnez des miles sur les séjours à l'hôtel et les locations de voitures avec nos partenaires mondiaux.",
+            "cta": "Réserver Maintenant"
+        },
+        "missing": {
+            "title": "Miles Manquants?",
+            "text": "Avez-vous récemment volé mais ne voyez pas les miles dans votre compte? Vous pouvez réclamer les miles manquants jusqu'à 12 mois après votre vol.",
+            "cta": "Réclamer les Miles Manquants"
+        },
+        "cta": {
+            "title": "Prêt à commencer à gagner?",
+            "text": "Rejoignez EgyptAir Plus aujourd'hui ou connectez-vous pour voir vos opportunités de gain personnalisées.",
+            "checkBalance": "Vérifier Mon Solde"
+        },
+        "calculator": {
+            "title": "Calculateur de Miles",
+            "subtitle": "Estimez vos récompenses",
+            "from": "Départ",
+            "to": "Destination",
+            "class": "Classe de Réservation",
+            "button": "Calculer les Miles",
+            "result": "Points Estimés",
+            "disclaimer": "Les miles finaux peuvent varier en fonction des règles tarifaires spécifiques et du statut de niveau."
+        }
+    },
+    "redeem": {
+        "title": "Utiliser vos Miles",
+        "subtitle": "Transformez vos miles en souvenirs. Explorez les façons dont vous pouvez dépenser vos miles collectés.",
+        "flights": {
+            "title": "Vols Récompense",
+            "text": "Réservez des vols vers plus de 1 300 destinations dans le monde avec EgyptAir et les partenaires Star Alliance.",
+            "cta": "Réserver avec des Miles"
+        },
+        "upgrade": {
+            "title": "Surclassements Récompense",
+            "text": "Surclassez votre siège en Classe Affaires en utilisant vos miles et profitez d'une expérience de voyage premium.",
+            "cta": "Surclasser Maintenant"
+        },
+        "baggage": {
+            "title": "Excédent de Bagages",
+            "text": "Besoin d'emporter plus? Utilisez vos miles pour payer un supplément de bagages sur votre prochain vol.",
+            "cta": "Acheter des Bagages"
+        }
+    },
+    "tiers": {
+        "title": "Niveaux de Membre",
+        "subtitle": "Élevez votre expérience de voyage en montant à travers nos niveaux de membre.",
+        "qualification": "Qualification",
+        "entryLevel": "Niveau d'Entrée",
+        "cta": {
+            "title": "Prêt à améliorer votre statut?",
+            "subtitle": "Réservez votre prochain vol aujourd'hui et commencez à gagner des miles de niveau vers votre prochain niveau.",
+            "button": "Réserver un Vol"
+        },
+        "levels": {
+            "blue": {
+                "name": "Blue",
+                "description": "Votre entrée dans le monde d'EgyptAir Plus.",
+                "benefits": [
+                    "Gagnez des Miles sur EgyptAir & Star Alliance",
+                    "Pas de Date d'Expiration",
+                    "Carte de Membre Numérique",
+                    "Priorité sur Liste d'Attente",
+                    "Billets Récompense",
+                    "Surclassements Récompense"
+                ]
+            },
+            "silver": {
+                "name": "Silver",
+                "description": "Plus de confort et de privilèges exclusifs.",
+                "benefits": [
+                    "Tous les avantages Blue",
+                    "Priorité Liste d'Attente Réservation (Star Alliance)",
+                    "Priorité Stand-by Aéroport (Star Alliance)",
+                    "Priorité Enregistrement Aéroport (EgyptAir)",
+                    "Priorité Traitement des Bagages (EgyptAir)",
+                    "50% de Réduction sur Bagages Supplémentaires (EgyptAir)",
+                    "20% de Miles Récompense Bonus (EgyptAir)"
+                ]
+            },
+            "gold": {
+                "name": "Gold",
+                "description": "Reconnaissance premium à travers le monde.",
+                "benefits": [
+                    "Tous les avantages Silver",
+                    "Priorité Enregistrement Aéroport (Star Alliance)",
+                    "Franchise de Bagages Supplémentaire (Star Alliance)",
+                    "Gold Track - Sécurité & Immigration Prioritaires (Star Alliance)",
+                    "Accès au Salon de l'Aéroport (Star Alliance)",
+                    "Embarquement Prioritaire (Star Alliance)",
+                    "Priorité Traitement des Bagages (Star Alliance)",
+                    "Priorité Liste d'Attente Réservations (Star Alliance)",
+                    "Priorité Stand-by Aéroport (Star Alliance)",
+                    "30% de Miles Récompense Bonus (EgyptAir)",
+                    "Transférer des Miles Récompense (EgyptAir)"
+                ]
+            },
+            "platinum": {
+                "name": "Platinum",
+                "description": "Le plus haut niveau de luxe et de service.",
+                "benefits": [
+                    "Tous les avantages Gold",
+                    "Priorité Enregistrement Aéroport (Star Alliance)",
+                    "Franchise de Bagages Supplémentaire (Star Alliance)",
+                    "Gold Track - Sécurité & Immigration Prioritaires (Star Alliance)",
+                    "Accès au Salon de l'Aéroport (Star Alliance)",
+                    "Embarquement Prioritaire (Star Alliance)",
+                    "Priorité Traitement des Bagages (Star Alliance)",
+                    "Priorité Liste d'Attente Réservations (Star Alliance)",
+                    "Priorité Stand-by Aéroport (Star Alliance)",
+                    "40% de Miles Récompense Bonus (EgyptAir)",
+                    "Service Accueil & Assistance à l'Aéroport du Caire (EgyptAir)",
+                    "Transférer des Miles Récompense (EgyptAir)",
+                    "Acheter des Miles de Niveau - Max 10 000 miles (EgyptAir)",
+                    "Transférer jusqu'à 60 000 Miles de Niveau (EgyptAir)"
+                ]
+            },
+            "elite": {
+                "name": "Elite",
+                "description": "Le summum de l'excellence et de la reconnaissance.",
+                "benefits": [
+                    "Tous les avantages Platinum",
+                    "Priorité Enregistrement Aéroport (Star Alliance)",
+                    "Franchise de Bagages Supplémentaire (Star Alliance)",
+                    "Gold Track - Sécurité & Immigration Prioritaires (Star Alliance)",
+                    "Accès au Salon de l'Aéroport (Star Alliance)",
+                    "Embarquement Prioritaire (Star Alliance)",
+                    "Priorité Traitement des Bagages (Star Alliance)",
+                    "Priorité Liste d'Attente Réservations (Star Alliance)",
+                    "Priorité Stand-by Aéroport (Star Alliance)",
+                    "35% de Miles Récompense Bonus (EgyptAir)",
+                    "Transférer des Miles Récompense (EgyptAir)",
+                    "Acheter des Miles de Niveau - Max 5 000 miles (EgyptAir)",
+                    "Transférer jusqu'à 30 000 Miles de Niveau (EgyptAir)",
+                    "Un Changement de Réservation Gratuit (EgyptAir)"
+                ]
+            }
+        }
+    },
+    "dashboard": {
+        "welcome": "Bon retour",
+        "memberSince": "Membre depuis",
+        "excellence": "Excellence",
+        "myProfile": "Mon Profil",
+        "memberBenefits": "Avantages Membre",
+        "status": {
+            "title": "Statut Actuel",
+            "tierMiles": "Miles de Niveau",
+            "to": "À"
+        },
+        "balance": {
+            "title": "Solde de Miles",
+            "available": "Miles Disponibles",
+            "redeem": "Utiliser",
+            "history": "Historique"
+        },
+        "actions": {
+            "title": "Actions Rapides",
+            "bookFlight": "Réserver un vol",
+            "claimMiles": "Réclamer les miles manquants",
+            "viewBenefits": "Voir les avantages"
+        },
+        "activity": {
+            "title": "Activité Récente",
+            "download": "Télécharger le Relevé",
+            "viewHistory": "Voir l'Historique Complet"
+        },
+        "visualizer": {
+            "title": "Miles vers l'Horizon",
+            "subtitle": "Explorateur de Récompenses Interactif",
+            "spend": "Dépenses Projetées",
+            "miles": "Miles",
+            "explore": "Explorer le Potentiel",
+            "cta": "Réservez Votre Horizon"
+        },
+        "pulse": {
+            "title": "Pouls d'Intelligence",
+            "category": "IA de Voyage",
+            "live": "SYNC_EN_DIRECT",
+            "save": "ÉCONOMISER",
+            "off": "DÉSACTIVER",
+            "deal": "OFFRE_PRÉDITE",
+            "nextForecast": "Prochaine Prévision dans",
+            "expand": "Élargir l'Univers"
+        },
+        "network": {
+            "title": "Univers Star",
+            "subtitle": "Interconnecté",
+            "partners": "Alliances Synchronisées",
+            "connections": "Partenaires Connectés"
+        },
+        "memberCard": {
+            "title": "Carte de Membre Numérique",
+            "holder": "Titulaire de la Carte",
+            "id": "Numéro de Membre"
+        },
+        "skyMap": {
+            "badge": "Portée Mondiale",
+            "title": "Un Monde Interconnecté",
+            "subtitle": "Interconnecté",
+            "description": "Découvrez le mouvement fluide du voyage mondial. Notre hub au Caire vous connecte à plus de 100 destinations à travers le réseau Star Alliance.",
+            "destinations": "Destinations",
+            "partners": "Compagnies Aériennes Partenaires"
+        }
+    }
+}
