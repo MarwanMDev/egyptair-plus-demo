@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -82,10 +82,22 @@ export function TierCard({ tierKey, level, index }: TierCardProps) {
 
     const Icon = config.icon
     const [showBenefits, setShowBenefits] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768)
+        }
+
+        checkMobile()
+        window.addEventListener('resize', checkMobile)
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
 
     // Staggered layout calculation:
     // Even items pushed down, Odd items regular, or some randomized-feel pattern
-    const yOffset = index % 2 === 0 ? 0 : 80
+    // Only apply offset on non-mobile screens
+    const yOffset = isMobile ? 0 : (index % 2 === 0 ? 0 : 80)
 
     return (
         <motion.div
